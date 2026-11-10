@@ -1,0 +1,160 @@
+{
+  "galaxies": [
+    {
+      "id": "m31",
+      "name": "M31",
+      "ra": 10.685,
+      "dec": 41.269,
+      "dist": 785,
+      "incl": 77.5,
+      "pa": 37.7,
+      "diam": 44,
+      "thick": 5.0,
+      "L_Gsun": 44.0
+    },
+    {
+      "id": "mw",
+      "name": "Milky Way",
+      "ra": 266.405,
+      "dec": -28.936,
+      "dist": 8.178,
+      "incl": -90,
+      "pa": 31.40133,
+      "diam": 27,
+      "thick": 3.0,
+      "L_Gsun": 20.0
+    },
+    {
+      "id": "m33",
+      "name": "M33",
+      "ra": 23.462,
+      "dec": 30.660,
+      "dist": 840,
+      "incl": 54,
+      "pa": 23,
+      "diam": 19,
+      "thick": 2.0,
+      "L_Gsun": 3.0
+    },
+    {
+      "id": "lmc",
+      "name": "LMC",
+      "ra": 80.894,
+      "dec": -69.756,
+      "dist": 49.6,
+      "incl": 30.0,
+      "pa": 145.3,
+      "diam": 9.4,
+      "thick": 6.0,
+      "L_Gsun": 2.1
+    },
+    {
+      "id": "smc",
+      "name": "SMC",
+      "ra": 13.187,
+      "dec": -72.829,
+      "dist": 62.4,
+      "incl": 0,
+      "pa": 0,
+      "diam": 5.8,
+      "thick": null,
+      "L_Gsun": 0.6
+    },
+    {
+      "id": "m32",
+      "name": "M32",
+      "ra": 10.674,
+      "dec": 40.865,
+      "dist": 763,
+      "incl": 0,
+      "pa": 0,
+      "diam": 2.0,
+      "thick": null,
+      "L_Gsun": 0.32
+    },
+    {
+      "id": "m110",
+      "name": "M110",
+      "ra": 10.092,
+      "dec": 41.685,
+      "dist": 824,
+      "incl": 0,
+      "pa": 0,
+      "diam": 5.3,
+      "thick": null,
+      "L_Gsun": 0.30
+    },
+    {
+      "id": "ngc147",
+      "name": "NGC 147",
+      "ra": 8.300,
+      "dec": 48.509,
+      "dist": 675,
+      "incl": 0,
+      "pa": 0,
+      "diam": 2.6,
+      "thick": null,
+      "L_Gsun": 0.062
+    },
+    {
+      "id": "ngc185",
+      "name": "NGC 185",
+      "ra": 9.742,
+      "dec": 48.337,
+      "dist": 617,
+      "incl": 0,
+      "pa": 0,
+      "diam": 2.1,
+      "thick": null,
+      "L_Gsun": 0.086
+    },
+    {
+      "id": "ngc6822",
+      "name": "NGC 6822",
+      "ra": 296.236,
+      "dec": -14.789,
+      "dist": 488,
+      "incl": 0,
+      "pa": 0,
+      "diam": 2.7,
+      "thick": null,
+      "L_Gsun": 0.11
+    },
+    {
+      "id": "ic1613",
+      "name": "IC 1613",
+      "ra": 16.199,
+      "dec": 2.118,
+      "dist": 725,
+      "incl": 0,
+      "pa": 0,
+      "diam": 3.4,
+      "thick": null,
+      "L_Gsun": 0.11
+    },
+    {
+      "id": "ic10",
+      "name": "IC 10",
+      "ra": 5.072,
+      "dec": 59.304,
+      "dist": 794,
+      "incl": 0,
+      "pa": 0,
+      "diam": 1.5,
+      "thick": null,
+      "L_Gsun": 0.24
+    },
+    {
+      "id": "wlm",
+      "name": "WLM",
+      "ra": 0.492,
+      "dec": -15.461,
+      "dist": 933,
+      "incl": 0,
+      "pa": 0,
+      "diam": 3.1,
+      "thick": null,
+      "L_Gsun": 0.049
+    }
+  ]
+}

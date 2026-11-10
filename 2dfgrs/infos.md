@@ -1,0 +1,2 @@
+- The [2-degree Field Galaxy Redshift Survey (2dFGRS)](http://www.2dfgrs.net/) is a redshift survey conducted by the Australian Astronomical Observatory between 1997 and 2002 with a 400-fiber spectrograph installed on the 3.9m Anglo-Australian Telescope .
+- The survey covered 4% of the full sky up to redshift z~0.3, cataloguing about 230k galaxies that can be divided into Blue (active star forming) and Red (passive) populations based on their color.

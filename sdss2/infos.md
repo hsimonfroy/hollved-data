@@ -1,0 +1,4 @@
+- The [Sloan Digital Sky Survey (SDSS)](https://www.sdss.org/) is a wide-field imaging and spectroscopic survey conducted with the dedicated 2.5m Sloan Telescope at Apache Point Observatory, New Mexico, USA.
+- The [SDSS Legacy Survey](https://www.sdss2.org/legacy/index.php) is the galaxy mapping program of SDSS-I (2000-20005) and SDSS-II (2005-2008). Over 29% of the full sky, it catalogued about 900k galaxy spectra divided into Main Galaxy Samples (MGS), Luminous Red Galaxies (LRG), and Quasars (QSO).
+<!-- DR7: https://arxiv.org/pdf/0812.0649
+Targeting: https://skyserver.sdss.org/dr7/en/help/docs/algorithm.asp?key=target -->

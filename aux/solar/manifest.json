@@ -1,0 +1,267 @@
+{
+  "_source": {
+    "orbits": "JPL/Standish approximate elements, ssd.jpl.nasa.gov/planets/approx_pos.html Table 1 (1800-2050). Heliocentric, mean ecliptic and equinox of J2000. Table 1 needs no b/c/s/f correction terms; those apply only to Table 2 (3000 BC - 3000 AD).",
+    "poles": "IAU WGCCRE 2015 report. ICRF right ascension/declination of the north pole, prime meridian angle W.",
+    "moon": "Astronomical Almanac low-precision lunar formulae. Verified against JPL Horizons over 2026-2050: median 0.10 deg, max 0.24 deg, and NOT cumulative (2038-2050 mean 0.104 deg vs 2026-2038 mean 0.086 deg).",
+    "rings": "Ring radii from the named ring boundaries; the span matches saturn_ring_alpha.png, whose alpha profile puts the Cassini Division at u=0.694 vs 0.691 predicted.",
+    "notes": [
+      "peri is the LONGITUDE of perihelion (varpi = node + argument of perihelion).",
+      "mDot is the mean motion in deg/day = JPL Ldot (deg/century) / 36525. Named by analogy with wDot.",
+      "m0 is the mean anomaly at J2000 = JPL L - varpi, wrapped to [0,360).",
+      "Only M (via mDot) and W (via wDot) advance with time; a/e/i/node/peri are held at their J2000 values. In a fixed J2000 frame their secular rates are <=0.33 deg/century.",
+      "EARTH IS THE EARTH-MOON BARYCENTRE. The true Earth centre is r_EMB - 0.012150585 * r_moon_geocentric, i.e. up to 4671 km away (0.73 Earth radii).",
+      "The Moon series is referred to the mean equinox OF DATE. Subtract the precession polynomial (deg) from its longitude to reach J2000, or it drifts 0.014 deg/yr.",
+      "Moon series tuples are [cD, cM, cMp, cF, amplitude]; argument = cD*D + cM*M + cMp*Mp + cF*F. lon sums onto L. par is horizontal parallax in deg; r = parRadiusKm / sin(par).",
+      "Dropped as negligible: T-terms in pole ra/dec (<0.01 deg by 2050), Neptune sin N libration (<=0.5 deg), Moon pole libration (+-4 deg).",
+      "Ring radii are absolute km from the planet centre, independent of diam."
+    ],
+    "spacecraft": "Voyager 1/2 heliocentric state vectors at JD 2460310.5, from JPL Horizons (COMMAND -31/-32, CENTER 500@10, REF_PLANE FRAME, OUT_UNITS AU-D), retrieved 2026-08-24. ICRF EQUATORIAL, unlike the ecliptic planetary elements above; both craft coast in a straight line from here, so position and velocity are all the model needs.",
+    "heliosphere": "nose = the interstellar neutral helium inflow axis measured by Ulysses and IBEX, ecliptic (255.7, 5.1) J2000 converted to ICRF equatorial; this is the Sun's motion relative to the LOCAL INTERSTELLAR CLOUD at ~26 km/s, 86 deg from the direction of the Sun's galactic orbit and 52 deg from the solar apex. standoffAu = Voyager 1's heliopause crossing, 2012-08-25 at 121.6 AU; Voyager 2 crossed 2018-11-05 at 119.0 AU, 53 deg from the nose, so the upwind boundary is very nearly spherical. The tail's extent is NOT here: it is unsettled by a factor of 30 between the croissant and comet models, so the renderer chooses it."
+  },
+  "epoch": 2451545,
+  "frame": "ecliptic-J2000",
+  "obliquity": 23.4392911,
+  "heliosphere": { "nose": { "ra": 255.04, "dec": -17.60 }, "standoffAu": 121.6 },
+  "bodies": [
+    {
+      "id": "sun",
+      "name": "Sun",
+      "diam": 1392000,
+      "orbit": null,
+      "pole": {
+        "ra": 286.13,
+        "dec": 63.87,
+        "w0": 84.176,
+        "wDot": 14.1844
+      }
+    },
+    {
+      "id": "mercury",
+      "name": "Mercury",
+      "diam": 4879.4,
+      "orbit": {
+        "a": 0.38709927,
+        "e": 0.20563593,
+        "i": 7.00497902,
+        "node": 48.330765929999984,
+        "peri": 77.45779628000003,
+        "m0": 174.79252722,
+        "mDot": 4.09233878
+      },
+      "pole": {
+        "ra": 281.0103,
+        "dec": 61.4155,
+        "w0": 329.5988,
+        "wDot": 6.1385108
+      }
+    },
+    {
+      "id": "venus",
+      "name": "Venus",
+      "diam": 12103.6,
+      "orbit": {
+        "a": 0.72333566,
+        "e": 0.00677672,
+        "i": 3.39467605,
+        "node": 76.67984254999999,
+        "peri": 131.60246717999996,
+        "m0": 50.37663232,
+        "mDot": 1.60213047
+      },
+      "pole": {
+        "ra": 272.76,
+        "dec": 67.16,
+        "w0": 160.2,
+        "wDot": -1.4813688
+      }
+    },
+    {
+      "id": "earth",
+      "name": "Earth",
+      "diam": 12742,
+      "orbit": {
+        "a": 1.00000261,
+        "e": 0.01671123,
+        "i": -1.531e-05,
+        "node": 0,
+        "peri": 102.93768193,
+        "m0": 357.52688973,
+        "mDot": 0.9856091
+      },
+      "pole": {
+        "ra": 0,
+        "dec": 90,
+        "w0": 190.147,
+        "wDot": 360.9856235
+      }
+    },
+    {
+      "id": "moon",
+      "name": "Moon",
+      "diam": 3474.8,
+      "orbit": {
+        "center": "earth",
+        "model": "lunar-series",
+        "frame": "ecliptic-of-date",
+        "precession": [1.3969713, 0.0003086],
+        "periodDays": 27.321662,
+        "args": {
+          "L": [218.3164477, 481267.88123421],
+          "D": [297.8501921, 445267.1114034],
+          "M": [357.5291092, 35999.0502909],
+          "Mp": [134.9633964, 477198.8675055],
+          "F": [93.272095, 483202.0175233]
+        },
+        "lon": [
+          [0, 0, 1, 0, 6.289],
+          [-2, 0, 1, 0, -1.274],
+          [2, 0, 0, 0, 0.658],
+          [0, 0, 2, 0, 0.214],
+          [0, 1, 0, 0, -0.186],
+          [0, 0, 0, 2, -0.114]
+        ],
+        "lat": [
+          [0, 0, 0, 1, 5.128],
+          [0, 0, 1, 1, 0.281],
+          [0, 0, -1, 1, -0.278],
+          [-2, 0, 0, 1, -0.173]
+        ],
+        "par": [
+          [0, 0, 0, 0, 0.9508],
+          [0, 0, 1, 0, 0.0518],
+          [-2, 0, 1, 0, 0.0095],
+          [2, 0, 0, 0, 0.0078],
+          [0, 0, 2, 0, 0.0028]
+        ],
+        "parRadiusKm": 6378.14
+      },
+      "pole": {
+        "ra": 269.9949,
+        "dec": 66.5392,
+        "w0": 38.3213,
+        "wDot": 13.17635815
+      }
+    },
+    {
+      "id": "mars",
+      "name": "Mars",
+      "diam": 6779,
+      "orbit": {
+        "a": 1.52371034,
+        "e": 0.0933941,
+        "i": 1.84969142,
+        "node": 49.559538910000015,
+        "peri": 336.05637041,
+        "m0": 19.39019754,
+        "mDot": 0.52403293
+      },
+      "pole": {
+        "ra": 317.269202,
+        "dec": 54.432516,
+        "w0": 176.049863,
+        "wDot": 350.891982443297
+      }
+    },
+    {
+      "id": "jupiter",
+      "name": "Jupiter",
+      "diam": 139822,
+      "orbit": {
+        "a": 5.202887,
+        "e": 0.04838624,
+        "i": 1.30439695,
+        "node": 100.47390909,
+        "peri": 14.728479830000026,
+        "m0": 19.66796068,
+        "mDot": 0.08308682
+      },
+      "pole": {
+        "ra": 268.056595,
+        "dec": 64.495303,
+        "w0": 284.95,
+        "wDot": 870.536
+      }
+    },
+    {
+      "id": "saturn",
+      "name": "Saturn",
+      "diam": 116464,
+      "orbit": {
+        "a": 9.53667594,
+        "e": 0.05386179,
+        "i": 2.48599187,
+        "node": 113.66242448000003,
+        "peri": 92.59887831000003,
+        "m0": 317.35536592,
+        "mDot": 0.03347005
+      },
+      "pole": {
+        "ra": 40.589,
+        "dec": 83.537,
+        "w0": 38.9,
+        "wDot": 810.7939024
+      },
+      "ring": {
+        "inner": 74658,
+        "outer": 140180,
+        "tex": "saturn_ring_alpha.png"
+      }
+    },
+    {
+      "id": "uranus",
+      "name": "Uranus",
+      "diam": 50724,
+      "orbit": {
+        "a": 19.18916464,
+        "e": 0.04725744,
+        "i": 0.77263783,
+        "node": 74.01692502999998,
+        "peri": 170.95427629999995,
+        "m0": 142.28382821,
+        "mDot": 0.0117312
+      },
+      "pole": {
+        "ra": 257.311,
+        "dec": -15.175,
+        "w0": 203.81,
+        "wDot": -501.1600928
+      }
+    },
+    {
+      "id": "neptune",
+      "name": "Neptune",
+      "diam": 49244,
+      "orbit": {
+        "a": 30.06992276,
+        "e": 0.00859048,
+        "i": 1.77004347,
+        "node": 131.78422574,
+        "peri": 44.964762269999994,
+        "m0": 259.91520804,
+        "mDot": 0.00598109
+      },
+      "pole": {
+        "ra": 299.36,
+        "dec": 43.46,
+        "w0": 253.18,
+        "wDot": 536.3128492
+      }
+    },
+    {
+      "id": "voyager1",
+      "name": "Voyager 1",
+      "diam": 0.005,
+      "orbit": { "model": "escape", "epoch": 2460310.5,
+                 "posAu": [-30.96106726, -155.40235713, 34.30653387],
+                 "velAuPerDay": [-1.196445871e-3, -9.472665246e-3, 2.088720309e-3] }
+    },
+    {
+      "id": "voyager2",
+      "name": "Voyager 2",
+      "diam": 0.005,
+      "orbit": { "model": "escape", "epoch": 2460310.5,
+                 "posAu": [37.45139762, -58.72196713, -116.07292173],
+                 "velAuPerDay": [2.433185732e-3, -2.347289451e-3, -8.151772016e-3] }
+    }
+  ]
+}

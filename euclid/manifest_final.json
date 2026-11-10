@@ -1,0 +1,7 @@
+{
+  "programs": [
+      { "name": "Euclid", "start": 2023, "end": 2029, "count": 30000000 }
+    ],
+    "tracers": ["gxy", "qso"],
+    "footprint": [14000, 14000]
+}

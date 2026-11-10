@@ -1,0 +1,21 @@
+# Logs
+logs
+*.log
+
+# Raw data
+*.fits
+*.vot
+*.csv.gz
+cfa1.txt
+cfa2.txt
+2dFGRS.txt
+__pycache__/
+
+# Test
+test/
+
+# Optional assistant file
+CLAUDE.md
+
+# Sonification renders and mock cache
+music_test*/

@@ -1,0 +1,20 @@
+eBOSS LRG
+                 rows       zmin    zmax
+  NGC         107,500      0.602   0.985   nan: 0
+  SGC          67,316      0.602   0.985   nan: 0
+  NGC+SGC     174,816      0.602   0.985   nan: 0
+  fulldata    311,848      -0.005   1.147   nan: 70,201
+
+eBOSS ELG
+                 rows       zmin    zmax
+  NGC          83,769      0.619   1.092   nan: 0
+  SGC          89,967      0.621   1.090   nan: 0
+  NGC+SGC     173,736      0.620   1.091   nan: 0
+  fulldata    269,178      -0.005   2.091   nan: 0
+
+eBOSS QSO
+                 rows       zmin    zmax
+  NGC         218,209      0.812   2.190   nan: 0
+  SGC         125,499      0.812   2.190   nan: 0
+  NGC+SGC     343,708      0.812   2.190   nan: 0
+  fulldata    655,521      -0.002   3.337   nan: 0

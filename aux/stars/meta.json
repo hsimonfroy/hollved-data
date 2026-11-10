@@ -1,0 +1,12 @@
+{
+  "count": 119477,
+  "segments": 756,
+  "maxDistPc": 10000.0,
+  "frame": "ICRS equatorial, +X vernal equinox, +Z north celestial pole, origin at the solar-system barycentre",
+  "units": "positions in parsecs; absmag is absolute visual magnitude",
+  "_source": {
+    "stars": "HYG / AT-HYG (hyglike_from_athyg_v40), David Nash, astronexus.com, CC BY-SA 4.0. Hipparcos + Yale Bright Star + Gliese, distances updated from Gaia DR3/DR2.",
+    "lines": "Sky & Telescope constellation figures via Stellarium's western_SnT sky culture (Paul Krizak, Jonathan E. Piskor; rework by the Stellarium team), CC BY-SA 2.0. There is no official standard for constellation stick figures.",
+    "color": "B-V converted to temperature by Ballesteros (2012), then to sRGB along the black-body locus, normalised to hue only."
+  }
+}

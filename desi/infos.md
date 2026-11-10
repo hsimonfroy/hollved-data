@@ -1,0 +1,4 @@
+- The [Dark Energy Spectroscopic Instrument (DESI)](https://www.desi.lbl.gov/) is a 5000-fiber spectrograph installed on the 4m Mayall Telescope at Kitt Peak National Observatory, Arizona, USA.
+- Started in 2021, this 8-year survey covers 41% of the full sky up to redshift z~4, leading to 63M galaxy spectra divided into Bright Galaxy Samples (BGS), Luminous Red Galaxies (LRG), Emission Line Galaxies (ELG), and Quasars (QSO).
+<!-- (BGS z&lt;0.6) (LRG 0.4&lt;z&lt;1.1) (ELG 0.6&lt;z&lt;1.6) Quasars&nbsp;(QSO 0.9&lt;z&lt;4). -->
+- The [first Data Release (DR1)](https://data.desi.lbl.gov/doc/releases/dr1/#large-scale-structure-catalogs), the largest galaxy catalog to date, includes the spectra of about 10M galaxies and has already provided [significant cosmological insights](https://data.desi.lbl.gov/doc/papers/dr1/), especially on the nature of dark energy.
