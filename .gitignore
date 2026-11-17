@@ -17,5 +17,6 @@ test/
 # Optional assistant file
 CLAUDE.md
 
-# Sonification renders and mock cache
-music_test*/
+# Sonification and promo video scripts (outputs go to $SCRATCH/hollved)
+music_scripts/
+promo_scripts/
