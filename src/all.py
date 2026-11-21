@@ -12,7 +12,7 @@ META_TRACERS = [
     {'id': 'sdss2',  'name': 'SDSS Legacy',     'color': '0x24bddcff', 'sources': [('sdss2', 'mgs'), ('sdss2', 'lrg'), ('sdss2', 'qso')],                      'program_ref': ('sdss2', 0)},
     {'id': 'sdss4',  'name': 'SDSS BOSS-eBOSS', 'color': '0xafa6e1ff', 'sources': [('sdss4', 'lowz'), ('sdss4', 'cmass'), ('sdss4', 'lrg'), ('sdss4', 'elg'), ('sdss4', 'qso')], 'program_ref': ('sdss4', 0)},
     {'id': 'quaia',  'name': 'Quaia',           'color': '0xff5c00ff', 'sources': [('quaia', 'bright'), ('quaia', 'faint')],                                    'program_ref': ('quaia', 0)},
-    {'id': 'euclid', 'name': 'Euclid',          'color': '0xf07d81ff', 'sources': [('euclid', 'gxy')],                                                          'program_ref': ('euclid', 0)},
+    {'id': 'euclid', 'name': 'Euclid',          'color': '0xf07d81ff', 'sources': [('euclid', 'ha')],                                                           'program_ref': ('euclid', 0)},
     {'id': 'desi',   'name': 'DESI',            'color': '0x44ddaaff', 'sources': [('desi', 'bgs'), ('desi', 'lrg'), ('desi', 'elg'), ('desi', 'qso')],        'program_ref': ('desi', 0)},
 ]
 

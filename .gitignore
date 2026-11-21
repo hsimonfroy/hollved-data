@@ -6,6 +6,7 @@ logs
 *.fits
 *.vot
 *.csv.gz
+raw/euclid_dr1_parts/
 cfa1.txt
 cfa2.txt
 2dFGRS.txt

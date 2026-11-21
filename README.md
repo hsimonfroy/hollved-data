@@ -9,7 +9,7 @@ Redshift catalogs:
 * [SDSS2](https://www.sdss2.org/home.php) with [DR7 Legacy Survey](https://classic.sdss.org/dr7/products/spectra/getspectra.php)
 * [SDSS4](https://www.sdss4.org/) with [DR12 BOSS](https://data.sdss.org/sas/dr12/boss/lss/) and [DR16 eBOSS](https://data.sdss.org/sas/dr16/eboss/lss/catalogs/DR16/)
 * [Quaia](https://zenodo.org/records/10403370)
-* [Euclid](https://eas.esac.esa.int/sas/) with [Q1 quality cut](https://euclid.caltech.edu/page/euclid-q1-data-faq)
+* [Euclid](https://eas.esac.esa.int/sas/) with [DR1 spectroscopic redshifts](https://arxiv.org/abs/2611.17960)
 * [DESI](https://www.desi.lbl.gov/) with [DR1](https://data.desi.lbl.gov/public/dr1/survey/catalogs/dr1/LSS/iron/LSScats/v1.5/)
 
 Auxiliary data:
